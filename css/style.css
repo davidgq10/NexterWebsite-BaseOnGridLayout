@@ -41,6 +41,18 @@ body {
   grid-column: center-start/center-end;
   grid-template-columns: repeat(3, 1fr); }
 
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+
+.title {
+  display: inline; }
+  .title__icon {
+    height: 5rem;
+    color: red; }
+
 .story__pictures {
   background-color: #c69963;
   grid-column: full-start / col-end 4; }
