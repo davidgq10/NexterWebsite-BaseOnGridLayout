@@ -115,19 +115,35 @@ body {
   display: grid;
   grid-template-rows: 1fr min-content 6rem 1fr;
   grid-template-columns: max-content;
-  justify-content: center; }
+  justify-content: center;
+  overflow: visible; }
   .header__logo {
     height: 3rem;
-    justify-self: center; }
+    justify-self: center;
+    overflow: visible; }
   .header__btn {
     align-self: start;
     justify-self: start; }
+  .header__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #aaa; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      height: 1px;
+      display: flex;
+      background-color: currentColor; }
   .header__seenon-logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem; }
     .header__seenon-logos img {
       height: 2.5rem;
-      justify-self: center; }
+      justify-self: center;
+      filter: brightness(70%); }
 
 .realtors {
   background-color: #101d2c;
