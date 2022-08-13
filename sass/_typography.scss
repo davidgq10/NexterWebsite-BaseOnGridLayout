@@ -58,13 +58,22 @@
     transition: all .2s;
 
     &:hover {
-        background-color: $color-primary-dark
+        background-color: $color-primary-dark;
     }
 }
 
-.mb{
-    &-sm {margin-bottom: 2rem;}
-    &-md {margin-bottom: 3rem;}
-    &-lg {margin-bottom: 4rem;}
-    &-hg {margin-bottom: 8rem;}
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+
+.mb-lg {
+    margin-bottom: 4rem;
+}
+
+.mb-hg {
+    margin-bottom: 8rem;
 }
