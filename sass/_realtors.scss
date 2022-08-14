@@ -20,6 +20,7 @@
         grid-row-gap: 5vh;
         align-items: center;
 
+
         @media only screen and (max-width: $bp-medium) {
             grid-template-columns: repeat(3, min-content max-content);
         }
@@ -39,6 +40,5 @@
         text-transform: uppercase;
         color: $color-grey-light-2;
         margin-top: -3px;
-        font-size: 1.2rem;
     }
 }
