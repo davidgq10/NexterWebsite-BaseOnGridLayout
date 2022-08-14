@@ -31,7 +31,11 @@ $bp-small: 37.5em; // 600px;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px=62.5% This defines what a rem is.
+    font-size: 62.5%; // 10px/16px=62.5% This defines what a rem is. 
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%; //8px
+    }
 }
 
 body {
@@ -45,6 +49,15 @@ body {
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: min-content 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 6rem 100vh min-content 40vw repeat(3, min-content);
+    }
 
     &>* {
         padding: 40px;
